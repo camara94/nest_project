@@ -1,0 +1,36 @@
+Commentaire:id,titre,contenu,creerLe
+commenter boutiquer, 11Commentaire, 1N Boutique
+Boutique:id,nom,rue,numero,codePays,telephone
+contenir, 1NBoutique, 11Photo
+
+:
+est ecrit,11 Commentaire, 1NUtilisateur
+avoir, 1NBoutique, 11Produit
+Photo:id,nom,url
+contenir_2,1NProduit, 11Photo 
+
+Utilisateur:id,prenom,nom,password,email,genre,telephone
+passer,1NUtilisateur,11Commande
+Commande:id, creeLe,status
+:
+:
+
+posseder,1NUtilisateur,11Adresse
+referer,11Commande,11Livraison
+:
+contienir, 1NCommande, 11LigneCommande
+:
+LigneCommande:id,quantite
+composer, 11LigneCommande, 1NProduit
+Produit:id,designation,description,prix
+
+:
+:
+appartenir, 1NCategorie,11Produit
+:
+Categorie:id, nom
+
+Adresse:id, rue, numero, numeroAppartement,message,code,ville
+avoir_2,1NAdresse,11Livraison
+Livraison:date,
+
