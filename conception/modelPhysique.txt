@@ -1,0 +1,19 @@
+[1mCommentaire[0m ([4mid[0m, titre, contenu, creerLe, #idUtilisateur, #idBoutique)
+
+[1mBoutique[0m ([4mid[0m, nom, rue, numero, codePays, telephone)
+
+[1mPhoto[0m ([4mid[0m, nom, url, #idProduit, #idBoutique)
+
+[1mUtilisateur[0m ([4mid[0m, prenom, nom, password, email, genre, telephone)
+
+[1mCommande[0m ([4mid[0m, creeLe, status, #idUtilisateur)
+
+[1mLigneCommande[0m ([4mid[0m, quantite, #idProduit, #idCommande)
+
+[1mProduit[0m ([4mid[0m, designation, description, prix, #idCategorie, #idBoutique)
+
+[1mCategorie[0m ([4mid[0m, nom)
+
+[1mAdresse[0m ([4mid[0m, rue, numero, numeroAppartement, message, code, ville, #idUtilisateur)
+
+[1mLivraison[0m ([4mdate[0m, , #idAdresse, #idCommande)
